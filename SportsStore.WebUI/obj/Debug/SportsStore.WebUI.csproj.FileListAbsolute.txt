@@ -136,3 +136,7 @@ C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\pl\System.Web.Help
 C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\pl\System.Web.Mvc.resources.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\EntityFramework.dll
+C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\EntityFramework.xml
+C:\Users\pawel\source\repos\SportsStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml
