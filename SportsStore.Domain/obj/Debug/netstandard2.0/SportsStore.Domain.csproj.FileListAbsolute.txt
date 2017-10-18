@@ -1,0 +1,6 @@
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\bin\Debug\netstandard2.0\SportsStore.Domain.deps.json
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\bin\Debug\netstandard2.0\SportsStore.Domain.dll
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\obj\Debug\netstandard2.0\SportsStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\obj\Debug\netstandard2.0\SportsStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\obj\Debug\netstandard2.0\SportsStore.Domain.AssemblyInfoInputs.cache
+C:\Users\pawel\source\repos\SportsStore\SportsStore.Domain\obj\Debug\netstandard2.0\SportsStore.Domain.AssemblyInfo.cs
