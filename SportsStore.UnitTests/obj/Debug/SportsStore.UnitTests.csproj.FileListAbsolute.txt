@@ -113,9 +113,7 @@ C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.Domain.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.WebUI.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\WebActivator.dll
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.Mvc.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.Razor.dll
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.Domain.pdb
@@ -130,14 +128,10 @@ C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.Web.Common.xml
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.Web.Mvc.pdb
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.Web.Mvc.xml
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.Mvc.xml
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.Razor.xml
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.xml
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\pl\System.Web.Mvc.resources.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\pl\System.Web.Razor.resources.dll
-C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\pl\System.Web.WebPages.Razor.resources.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\pl\System.Web.WebPages.resources.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\bin\Debug\pl\System.Web.WebPages.Deployment.resources.dll
 C:\Users\pawel\source\repos\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.csprojResolveAssemblyReference.cache
