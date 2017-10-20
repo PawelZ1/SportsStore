@@ -108,5 +108,42 @@ namespace SportsStore.UnitTests
             Assert.AreEqual(result.Length, 2);
             Assert.IsTrue(result[0].Name == "P2" && result[1].Name == "P4");
         }
+
+        [TestMethod]
+        public void Can_Create_Categories()
+        {
+            // przygotowanie - mock IProductsRepository w celu stworzenia obiektu NavControllera
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(x => x.Products).Returns(new Product[] {
+                new Product {ProductID = 1, Name = "P1", Category = "Jabłka"},
+                new Product {ProductID = 2, Name = "P2", Category = "Jabłka"},
+                new Product {ProductID = 3, Name = "P3", Category = "Śliwki"},
+                new Product {ProductID = 4, Name = "P4", Category = "Pomarańcze"} 
+            });
+            NavController controller = new NavController(mock.Object);
+            // działanie 
+            String[] result = ((IEnumerable<string>)controller.Menu().Model).ToArray();
+            //asercja
+            Assert.AreEqual(result.Length, 3);
+            Assert.IsTrue(result[2] == "Śliwki");
+        }
+
+        [TestMethod]
+        public void Generate_Category_Specific_Product_Count()
+        {
+            //przygotowanie - mock IProductsRepository w celu stworzenia obiektu ProductControllera
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(p => p.Products).Returns(new Product[]
+            {
+                new Product {ProductID = 1, Name = "P1", Category = "Cat1"},
+                new Product {ProductID = 2, Name = "P2", Category = "Cat2"},
+                new Product {ProductID = 3, Name = "P3", Category = "Cat1"},
+                new Product {ProductID = 4, Name = "P4", Category = "Cat2"},
+                new Product {ProductID = 5, Name = "P5", Category = "Cat3"}
+            });
+            mock.Setup()
+            //dzialanie
+
+        }
     }
 }
