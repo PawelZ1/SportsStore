@@ -141,9 +141,17 @@ namespace SportsStore.UnitTests
                 new Product {ProductID = 4, Name = "P4", Category = "Cat2"},
                 new Product {ProductID = 5, Name = "P5", Category = "Cat3"}
             });
-            mock.Setup()
+            ProductController controller = new ProductController(mock.Object);
             //dzialanie
-
+            int res1 = ((ProductsListViewModel)controller.List("Cat1").Model).PagingInfo.TotalItems;
+            int res2 = ((ProductsListViewModel)controller.List("Cat2").Model).PagingInfo.TotalItems;
+            int res3 = ((ProductsListViewModel)controller.List("Cat3").Model).PagingInfo.TotalItems;
+            int resAll = ((ProductsListViewModel)controller.List(null).Model).PagingInfo.TotalItems;
+            //asercja
+            Assert.AreEqual(res1, 2);
+            Assert.AreEqual(res2, 2);
+            Assert.AreEqual(res3, 1);
+            Assert.AreEqual(resAll, 5);
         }
     }
 }
