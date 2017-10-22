@@ -114,7 +114,7 @@ namespace SportsStore.UnitTests
             // przygotowanie — utworzenie koszyka
             Cart cart = new Cart();
             // przygotowanie — utworzenie kontrolera
-            CartController target = new CartController(mock.Object);
+            CartController target = new CartController(mock.Object, null);
             // działanie — dodanie produktu do koszyka
             target.AddToCart(cart, 1, null);
             //asercja
@@ -133,12 +133,34 @@ namespace SportsStore.UnitTests
             // przygotowanie — utworzenie koszyka
             Cart cart = new Cart();
             // przygotowanie — utworzenie kontrolera
-            CartController target = new CartController(mock.Object);
+            CartController target = new CartController(mock.Object, null);
             // działanie — dodanie produktu do koszyka
             RedirectToRouteResult result = target.AddToCart(cart, 2, "myUrl");
             // asercje
             Assert.AreEqual(result.RouteValues["action"], "Index");
             Assert.AreEqual(result.RouteValues["returnUrl"], "myUrl");
+        }
+
+        [TestMethod]
+        public void Cannot_Checkout_Empty_Cart()
+        {
+            // przygotowanie — tworzenie imitacji procesora zamówień
+            Mock<IOrderProcessor> mock = new Mock<IOrderProcessor>();
+            // przygotowanie — tworzenie pustego koszyka
+            Cart cart = new Cart();
+            // przygotowanie — tworzenie danych do wysyłki
+            ShippingDetails shippingDetails = new ShippingDetails();
+            // przygotowanie — tworzenie egzemplarza kontrolera
+            CartController target = new CartController(null, mock.Object);
+            // działanie
+            ViewResult result = target.Checkout(cart, shippingDetails);
+            // asercje — sprawdzenie, czy zamówienie zostało przekazane do procesora
+            mock.Verify(m => m.ProcessOrder(It.IsAny<Cart>(), It.IsAny<ShippingDetails>()),
+            Times.Never());
+            // asercje — sprawdzenie, czy metoda zwraca domyślny widok
+            Assert.AreEqual("", result.ViewName);
+            // asercje — sprawdzenie, czy przekazujemy prawidłowy model do widoku
+            Assert.AreEqual(false, result.ViewData.ModelState.IsValid);
         }
     }
 }

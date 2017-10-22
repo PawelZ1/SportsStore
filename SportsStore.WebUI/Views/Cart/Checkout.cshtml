@@ -6,6 +6,7 @@
 <p>Proszę podać swoje dane, a towar zostanie natychmiast wysłany!</p>
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary();
     <h3>Wysyłka dla</h3>
     <div class="form-group">
         <label>Nazwisko:</label>
