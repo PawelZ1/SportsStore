@@ -109,5 +109,25 @@ namespace SportsStore.UnitTests
             // asercje — sprawdzenie typu zwracanego z metody
             Assert.IsInstanceOfType(result, typeof(ViewResult));
         }
+
+        [TestMethod]
+        public void Can_Delete_Valid_Products()
+        {
+            // przygotowanie - utworzenia egzemplarza klasy Product
+            Product productTodelete = new Product();
+            // przygotowanie - utworzenie mocka IProductRepository oraz wstrzykniecie od konstruktora AdminController
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(p => p.Products).Returns(new Product[]
+            {
+                new Product {ProductID = 1},
+                productTodelete,
+                new Product {ProductID = 2} 
+            });
+            AdminController controller = new AdminController(mock.Object);
+            // działanie - usuniecie obiektu productToDelete 
+            controller.Delete(productTodelete.ProductID);
+            // asercja
+            mock.Verify(p => p.DeleteProduct(productTodelete.ProductID));
+        }
     }
 }
